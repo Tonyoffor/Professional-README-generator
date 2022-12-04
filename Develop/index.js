@@ -1,19 +1,19 @@
 // TODO: Include packages needed for this application
 
 var fs = require("fs");
-const sections = [];
+
 // TODO: Create an array of questions for user input
-const questions = [];
+
 
 // TODO: Create a function to write README file
 
 
 
 // TODO: Create a function to initialize app
-function init() {}
+
 
 // Function call to initialize app
-init();
+
 
 
 const inquirer = require('inquirer');
