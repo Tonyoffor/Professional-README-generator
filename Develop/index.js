@@ -1,16 +1,13 @@
 // TODO: Include packages needed for this application
-var http = require('http');
+
 var fs = require("fs");
 const sections = [];
 // TODO: Create an array of questions for user input
 const questions = [];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    if (err) {
-        console.error(err);
-      }
-}
+
+
 
 // TODO: Create a function to initialize app
 function init() {}
@@ -35,8 +32,8 @@ inquirer
     },
     {
       type: 'input',
-      message: 'Please add your Table of Content',
-      name: 'Table of Content',
+      message: 'Please write the Table of content',
+      name:'TableOfContent',
     },
     {
         type: 'input',
@@ -50,12 +47,12 @@ inquirer
       },
       {
         type: 'input',
-        message: 'Please add license info',
+        message: 'Chose one from this list; A, B, C',  //find out the different types of licenses that can be used
         name: 'License',
       },
       {
         type: 'input',
-        message: 'Re-enter password to confirm:',
+        message: 'What is your contribution',
         name: 'Contribution',
       },
       {
@@ -65,13 +62,23 @@ inquirer
       },
       {
         type: 'input',
-        message: 'Enter your Github and email info here',
-        name: 'Questions',
+        message: 'Enter your Github Username ',
+        name: 'UserName',
+      },
+      {
+        type: 'input',
+        message: 'Enter your email ',
+        name: 'Email',
       },
   ])
   .then((response) =>
-    console.log(response)
-  
+   // var fs = require('fs');
+
+    fs.writeFile('ReadMe.md', response['Title']+ "\n" +response['Description']+ "\n" +response['Description'] +'\n' 
+    +"Questions"+'\n'+"Username "+response['UserName'] +'\n'+"Email "+response['Email'],  function (err) {
+      if (err) throw err;
+      console.log('Saved!');
+    })
   );
 
   
