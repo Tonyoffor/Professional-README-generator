@@ -74,8 +74,9 @@ inquirer
   .then((response) =>
    // var fs = require('fs');
 
-    fs.writeFile('ReadMe.md', response['Title']+ "\n" +response['Description']+ "\n" +response['Description'] +'\n' 
-    +"Questions"+'\n'+"Username "+response['UserName'] +'\n'+"Email "+response['Email'],  function (err) {
+    fs.writeFile('ReadMe.md', response['Title']+ "\n" +response['Description']+ "\n" +response['TableOfContent'] +'\n' 
+    +response['Installation'] +"\n" +response['Usage'] +"\n" +response['License']+ "\n" +response['Contribution']+ 
+    "\n" +response['Test'] +"Questions"+'\n'+"Username "+response['UserName'] +'\n'+"Email "+response['Email'],  function (err) {
       if (err) throw err;
       console.log('Saved!');
     })
