@@ -1,19 +1,7 @@
 // TODO: Include packages needed for this application
 
-var fs = require("fs");
-
-// TODO: Create an array of questions for user input
-
-
-// TODO: Create a function to write README file
-
-
-
-// TODO: Create a function to initialize app
-
-
-// Function call to initialize app
-
+var fs = require("fs"); 
+const generateReadMe = require('./utils/generateMarkdown')
 
 
 const inquirer = require('inquirer');
@@ -69,17 +57,15 @@ inquirer
         type: 'input',
         message: 'Enter your email ',
         name: 'Email',
-      },
-  ])
-  .then((response) =>
-   // var fs = require('fs');
-
-    fs.writeFile('ReadMe.md', response['Title']+ "\n" +response['Description']+ "\n" +response['TableOfContent'] +'\n' 
-    +response['Installation'] +"\n" +response['Usage'] +"\n" +response['License']+ "\n" +response['Contribution']+ 
-    "\n" +response['Test'] +"Questions"+'\n'+"Username "+response['UserName'] +'\n'+"Email "+response['Email'],  function (err) {
+      }]).then((response) =>{
+    let Readmestring = generateReadMe(response)
+    fs.writeFile('ReadMe.md', Readmestring ,  function (err) {
       if (err) throw err;
       console.log('Saved!');
     })
+  }
+   // var fs = require('fs');
+
   );
 
   
