@@ -1,10 +1,10 @@
 
   ## Title
-  hi  <br />
-  ![badge](https://img.shields.io/badge/license-C)<br />
+  Anthony Offor's Resume <br />
+  ![badge](https://img.shields.io/badge/license-A)<br />
 
   ## Description
-  hello <br />
+  Add later <br />
   ## Table of Contents
   - [Title](#title)
   - [Description](#description)
@@ -16,19 +16,21 @@
   - [Questions](#questions)
 
   ## Installation
-let
+installation
 ## Usage
 usage
+
+![Walkthrough]() <br/>
+Linkt to walkthrough
 ## License
-![badge](https://img.shields.io/badge/license-C-brightblue)
-<br />
-This application is covered by the C license. 
+![badge](https://img.shields.io/badge/license-A-brightblue)<br />
+This application is covered by the A license. 
 ## Contributors
-Ta
+tony
 ## Testing
 test
 ## Questions
-For any further questions you can contact me on:<br />
+If you have any further questions you can contact me on:<br />
   -GitHub: [Tonyoffor](https://github.com/Tonyoffor)<br />
 <br />
   -Email: tonyc.offor@gmail.com<br /><br />
