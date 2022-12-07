@@ -22,7 +22,7 @@ For this spiced project there is no need to install any new information. However
 ## Usage
 Same as in the last section this is where any important information about how to use the application will be kept.
 
-![Walkthrough](This video will be added here)<br />
+![Walkthrough](https://drive.google.com/file/d/1PlTwEag6lKZGuJgC2FiFMizY7hR9QreC/view)<br />
 Link to walkthrough:
 ## License
 ![badge](https://img.shields.io/badge/license-B-brightblue)<br />
