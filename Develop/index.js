@@ -1,11 +1,10 @@
-// TODO: Include packages needed for this application
-
+// this line requires the file and creates it below it collects the markdown file info from the utils file
 var fs = require("fs"); 
 const generateReadMe = require('./utils/generateMarkdown')
 
 
 const inquirer = require('inquirer');
-
+// this section prompts the user for information on the terminal that is then used to generate the readme
 inquirer
   .prompt([
     {
@@ -57,15 +56,12 @@ inquirer
         type: 'input',
         message: 'Enter your email ',
         name: 'Email',
-      }]).then((response) =>{
+    }]).then((response) =>{
     let Readmestring = generateReadMe(response)
     fs.writeFile('ReadMe.md', Readmestring ,  function (err) {
       if (err) throw err;
       console.log('Saved!');
     })
-  }
-   // var fs = require('fs');
-
-  );
+  });
 
   

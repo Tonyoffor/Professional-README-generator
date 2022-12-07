@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// This code generates the license badge
 function renderLicenseBadge(License) {
   switch(License) {
     case "A":
@@ -15,8 +14,8 @@ function renderLicenseBadge(License) {
       License = 'None';
   }}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+  
+// This function creates the link to the function
 function renderLicenseLink(License) {
   switch(License) {
     case "A":
@@ -31,8 +30,7 @@ function renderLicenseLink(License) {
     default:
       License = 'None';}}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
 function renderLicenseSection(License) {
   switch(License) {
     case "A":
@@ -48,11 +46,12 @@ function renderLicenseSection(License) {
       License = 'None';
 }}
 
+// This function generates the body of the Readme 
 function generateReadMe(response){
   return `
-  ## Title
+  ## Title 
   ${response.Title} <br />
-  ![badge](https://img.shields.io/badge/license-${renderLicenseBadge(License)})<br />
+  ![badge](https://img.shields.io/badge/license-${renderLicenseBadge(response.License)})<br />
 
   ## Description
   ${response.Description} <br />
@@ -71,11 +70,11 @@ ${response.Installation}
 ## Usage
 ${response.Usage}
 
-![Walkthrough]()
-Link to walkthrough:
+![Walkthrough](https://watch.screencastify.com/v/BQAdDimptIiDU33ouUov)<br />
+
 ## License
 ![badge](https://img.shields.io/badge/license-${response.License}-brightblue)<br />
-This application is covered by the ${renderLicenseBadge(License)} license. 
+This application is covered by the ${renderLicenseBadge(response.License)} license. 
 ## Contributors
 ${response.Contribution}
 ## Testing
@@ -88,5 +87,5 @@ If you have any further questions you can contact me on:<br />
   `
 }
 
-
+// This line exports the data to the index.js page
 module.exports = generateReadMe;
