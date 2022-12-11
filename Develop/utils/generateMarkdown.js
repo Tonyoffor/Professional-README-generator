@@ -70,7 +70,7 @@ ${response.Installation}
 ## Usage
 ${response.Usage}
 
-![Walkthrough](https://drive.google.com/file/d/1PlTwEag6lKZGuJgC2FiFMizY7hR9QreC/view)<br />
+[Click Me to see walkthrough](https://drive.google.com/file/d/1PlTwEag6lKZGuJgC2FiFMizY7hR9QreC/view)  <br />
 
 ## License
 ![badge](https://img.shields.io/badge/license-${response.License}-brightblue)<br />
